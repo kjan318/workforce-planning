@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Heart, TrendingDown, Brain, MessageSquare, Users, Award, Target, AlertCircle, CheckCircle, Zap, Activity, LineChart, UserPlus, ArrowRight, DollarSign, Scale, TrendingUp, Shield, Eye, RefreshCw, Lock, BarChart3, UserCheck, Lightbulb, Home, ChevronRight, Briefcase } from 'lucide-react';
 
 const HRWorkflowHub = () => {
   const [currentView, setCurrentView] = useState('home');
-  const [selectedPhase, setSelectedPhase] = useState(null);
+  const [selectedPhase, setSelectedPhase] = useState<number | null>(null);
 
   // Navigation data
   const workflows = [
