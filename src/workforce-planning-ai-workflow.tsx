@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Brain, TrendingUp, Users, Target, AlertCircle, CheckCircle, BarChart3, UserCheck, Lightbulb } from 'lucide-react';
 
 const WorkforcePlanningWorkflow = () => {
-  const [selectedPhase, setSelectedPhase] = useState(null);
+  const [selectedPhase, setSelectedPhase] = useState<number | null>(null);
 
   const phases = [
     {

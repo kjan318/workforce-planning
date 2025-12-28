@@ -1,4 +1,4 @@
-import WorkforcePlanningWorkflow from './workforce-planning-ai-workflow'
+import WorkforcePlanningWorkflow from './engagement-retention-ai-workflow'
 
 function App() {
   return <WorkforcePlanningWorkflow />
