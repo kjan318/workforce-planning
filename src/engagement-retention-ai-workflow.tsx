@@ -1,5 +1,32 @@
 import { useState } from 'react';
-import { Heart, TrendingDown, Brain, MessageSquare, Users, Award, Target, AlertCircle, CheckCircle, Zap, Activity, LineChart, UserPlus, ArrowRight, DollarSign, Scale, TrendingUp, Shield, Eye, RefreshCw, Lock, BarChart3, UserCheck, Lightbulb, Home, ChevronRight, Briefcase } from 'lucide-react';
+import { 
+  Heart, 
+  TrendingDown, 
+  Brain, 
+  MessageSquare, 
+  Users, 
+  Award, 
+  Target, 
+  AlertCircle, 
+  CheckCircle, 
+  Zap, 
+  Activity, 
+  LineChart, 
+  UserPlus, 
+  ArrowRight, 
+  DollarSign, 
+  Scale, 
+  TrendingUp, 
+  Shield, 
+  Eye, 
+  RefreshCw, 
+  BarChart3, 
+  UserCheck, 
+  Lightbulb, 
+  Home, 
+  ChevronRight, 
+  Briefcase 
+} from 'lucide-react';
 
 const HRWorkflowHub = () => {
   const [currentView, setCurrentView] = useState('home');
@@ -534,16 +561,14 @@ const HRWorkflowHub = () => {
 
   // Get current workflow data
   const getCurrentPhases = () => {
-    switch(currentView) {
-      case 'workforce-planning':
-        return workforcePlanningPhases;
-      case 'compensation-benefits':
-        return compensationPhases;
-      case 'engagement-retention':
-        return engagementPhases;
-      default:
-        return [];
+    if (currentView === 'workforce-planning') {
+      return workforcePlanningPhases;
+    } else if (currentView === 'compensation-benefits') {
+      return compensationPhases;
+    } else if (currentView === 'engagement-retention') {
+      return engagementPhases;
     }
+    return [];
   };
 
   const getCurrentWorkflow = () => {
